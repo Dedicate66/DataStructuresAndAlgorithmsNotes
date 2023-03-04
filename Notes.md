@@ -137,7 +137,7 @@ Elements are linked using **printers**
 
 ### Varieties
 #### 1. singly ~
-![Alt text](IMG_A00DDFC4443C-1.jpeg)
+![Alt text](Pictures/IMG_A00DDFC4443C-1.jpeg)
 
 **Benefits：**
 1. ArrayLists: Inserting & Deleting are very difficult
