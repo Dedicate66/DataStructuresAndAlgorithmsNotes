@@ -1,2 +1,2 @@
 # DataStructuresAndAlgorithmsNotes
-Learn from https://www.youtube.com/watch?v=CBYHwZcbD-s&amp;t=1164s
+Learn from @Bro Code at https://www.youtube.com/watch?v=CBYHwZcbD-s&t=1611s
