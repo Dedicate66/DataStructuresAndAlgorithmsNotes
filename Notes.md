@@ -362,6 +362,112 @@ public class DynamicArray {
 
 
 
+## 9. Linear search
+
+- Linear search = Iterate through a collection one element at a time
+- runtime complexity: O(n)
+- Disadvantages:
+  - Slow for large data sets
+- Advantages:
+  - Fast for searches of small to medium data sets
+  - Does not need to sorted
+  - Useful for data sturctures that do not have random access (Linked List)
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[] array = {1,2,3,43,5,7,4,3};
+        int index = linearSearch(array, 1);
+
+        if (index != -1){
+            System.out.println("Found" + index) ;
+        } else {
+            System.out.println("Not found");
+        }
+
+    }
+
+    private static int linearSearch(int[] array, int value) {
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value){
+                return i;
+            }
+        }
+
+        return -1;
+    }
+}
+
+```
+
+## 10. Binary search
+
+- Hald of the array is eliminated during each "step"
+- Advantages: large dataset
+- O(log n)
+
+
+
+## 11. Interpolation search
+
+插值查找算法
+
+-  = improvement over binary search best used for **"uniformly"* distributed data "guesses" where a value might be based on calculated probe results 
+- if probe is incorrect, search area is narrowed, and a new probe is calculated
+
+- average case : O(log(log)n)))
+- worst case : O(n) [value increase exponentially]  （exponentially呈几何级数的）
+- Mid = Begin + ( (End - Begin) / (A[End] - A[Begin]) ) * (X - A[Begin])
+  - 式子中，各部分的含义分别是：
+    - Mid：计算得出的元素的位置；
+    - End：搜索区域内最后一个元素所在的位置；
+    - Begin：搜索区域内第一个元素所在的位置；
+    - X：要查找的目标元素；
+    - A[]：表示整个待搜索序列。
+
+
+
+## 12. Bubble sory
+
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[] array = {1,3,4,6,256,2,5};
+        int temp;
+        // 从小到大排序
+
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
+                if (array[j] >= array[j + 1]) {
+                    temp = array[j + 1];
+                    array[j + 1] = array[j];
+                    array[j] = temp;
+                }
+            }
+
+        }
+    }
+}
+
+```
+
+### 13. Selection Sort
+
+- O(n^2)
+- 
+
 
 
 
